@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>DEAF GRANDMA</h1>
+  <% if @grandma %>
+  <p Grandma says: <span id="grandmasays"><%= @grandma%></span></p>
+    <%end%>
+
+
+  <form action='/grandma' method='post'>
+    Say something to Grandma
+    <br>
+    <input type="text" name="user_input">
+    <input type="submit" value="Say it!">
+  </form>
+
+</div>
